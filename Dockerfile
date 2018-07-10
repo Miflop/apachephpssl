@@ -54,6 +54,10 @@ RUN docker-php-ext-install gd
 # Ini
 COPY php.ini /usr/local/etc/php/
 
+# Uncomment these two lines to fix "non-UTF8" chars encoding and time format problems
+ADD freetds.conf /etc/freetds/
+ADD locales.conf /etc/freetds/
+
 # RUN docker-php-ext-install mysqli
 
 RUN openssl req -x509 -nodes -days 36500 -newkey rsa:4096 -keyout /etc/ssl/server.key -out /etc/ssl/server.crt -subj "/C=AA/ST=AA/L=Internet/O=Docker/OU=www.miflop.com/CN=miflop" \
