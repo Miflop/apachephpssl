@@ -1,3 +1,5 @@
+# WORKING ON IT, DONT INSTALL
+
 # Build & Deploy docker with following command,
 
 docker build -t apachephpssl -f Dockerfile .
