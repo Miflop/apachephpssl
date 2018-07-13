@@ -1,3 +1,5 @@
+# Apache + php 7.1 + ssl + mysql connector + mssql connector
+
 # Build & Deploy docker with following command,
 
 docker build -t apachephpssl -f Dockerfile .
